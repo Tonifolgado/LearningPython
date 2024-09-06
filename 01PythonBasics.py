@@ -22,7 +22,2275 @@ print(type(True))  # Tipo 'bool'
 print(type(print("Mi cadena de texto")))  # Tipo 'NoneType'
 
 print('Hello, World!')
-''' print() functions as newline character by default and you can override this default behavior as follows:
+''' print() functions as new line character by default and you can override this default behavior as follows:
+    any string passed as the value of the end parameter will be used as the terminating character of the printed line'''
+print('Hello, World!', end=' | ')
+print(100, end=' | ')
+print(5 + 5)
+# VARIABLES
+name = 'Farhan'
+age = 27
+print('My name is ' + name)
+# print('I am ' + age + 'years old') -->  this code produces an ERROR
+# strings can be concatenated with strings only
+# age is an integer, so a better way is embedding variables within string statements.
+print(f'My name is {name}')
+print(f'I am {age} years old')
+# f turns the strings into f-strings. These strings are evaluated at runtime
+# In a string, each character will have an index. And like arrays, string indexes are zero-based
+name = 'Farhan'
+print(name[0])
+print(name[1])
+# the output is F and a, in two lines
+print(name[0:3])
+# the output is Far, because is not included the character at the ending index
+print(len(name)) # output: 6
+# STRING METHODS
+print('python is awesome'.capitalize()) # Python is awesome
+print('python is awesome'.upper()) # PYTHON IS AWESOME
+print('PYTHON IS AWESOME'.lower()) # python is awesome
+print('PYTHON IS AWESOME'.islower()) # false
+print('PYTHON IS AWESOME'.isupper()) # true
+print('python is awesome'.replace('python', 'freeCodeCamp')) # freeCodeCamp is awesome
+print('python is awesome'.split(' '))
+'''The method takes a delimiter to split the string on. Here, I've used space as the delimiter. 
+Output of this code will be ['python', 'is', 'awesome']. This is a list. '''
+print(' '.join(['python', 'is', 'awesome'])) # python is awesome
+
+# NUMBERS
+a = 10
+b = 5
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+'''even if you perform a division operation between two integers, the result will always be a floating point. 
+If you want the result to be an integer, you can do so as follows:'''
+print(a//b)
+
+# Converting strings into float
+num1 = "10.1"
+num2 = "5.3"
+result = float(num1) + float(num2)
+print(result)
+print("{:.1f}".format(result)) # rounding the number specifying the decimal places
+
+
+# USER INPUT
+name = input('What is your name? ')
+print(f'Your name is {name}')
+
+# CONDITIONALS
+a = float(input('First: '))
+b = float(input('Second: '))
+op = input('Operation (sum/sub/mul/div): ')
+print('Hello, World!')
+''' print() functions as new line character by default and you can override this default behavior as follows:
+    any string passed as the value of the end parameter will be used as the terminating character of the printed line'''
+print('Hello, World!', end=' | ')
+print(100, end=' | ')
+print(5 + 5)
+# VARIABLES
+name = 'Farhan'
+age = 27
+print('My name is ' + name)
+# print('I am ' + age + 'years old') -->  this code produces an ERROR
+# strings can be concatenated with strings only
+# age is an integer, so a better way is embedding variables within string statements.
+print(f'My name is {name}')
+print(f'I am {age} years old')
+# f turns the strings into f-strings. These strings are evaluated at runtime
+# In a string, each character will have an index. And like arrays, string indexes are zero-based
+name = 'Farhan'
+print(name[0])
+print(name[1])
+# the output is F and a, in two lines
+print(name[0:3])
+# the output is Far, because is not included the character at the ending index
+print(len(name)) # output: 6
+# STRING METHODS
+print('python is awesome'.capitalize()) # Python is awesome
+print('python is awesome'.upper()) # PYTHON IS AWESOME
+print('PYTHON IS AWESOME'.lower()) # python is awesome
+print('PYTHON IS AWESOME'.islower()) # false
+print('PYTHON IS AWESOME'.isupper()) # true
+print('python is awesome'.replace('python', 'freeCodeCamp')) # freeCodeCamp is awesome
+print('python is awesome'.split(' '))
+'''The method takes a delimiter to split the string on. Here, I've used space as the delimiter. 
+Output of this code will be ['python', 'is', 'awesome']. This is a list. '''
+print(' '.join(['python', 'is', 'awesome'])) # python is awesome
+
+# NUMBERS
+a = 10
+b = 5
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+'''even if you perform a division operation between two integers, the result will always be a floating point. 
+If you want the result to be an integer, you can do so as follows:'''
+print(a//b)
+
+# Converting strings into float
+num1 = "10.1"
+num2 = "5.3"
+result = float(num1) + float(num2)
+print(result)
+print("{:.1f}".format(result)) # rounding the number specifying the decimal places
+
+
+# USER INPUT
+name = input('What is your name? ')
+print(f'Your name is {name}')
+
+# CONDITIONALS
+a = float(input('First: '))
+b = float(input('Second: '))
+op = input('Operation (sum/sub/mul/div): ')
+print('Hello, World!')
+''' print() functions as new line character by default and you can override this default behavior as follows:
+    any string passed as the value of the end parameter will be used as the terminating character of the printed line'''
+print('Hello, World!', end=' | ')
+print(100, end=' | ')
+print(5 + 5)
+# VARIABLES
+name = 'Farhan'
+age = 27
+print('My name is ' + name)
+# print('I am ' + age + 'years old') -->  this code produces an ERROR
+# strings can be concatenated with strings only
+# age is an integer, so a better way is embedding variables within string statements.
+print(f'My name is {name}')
+print(f'I am {age} years old')
+# f turns the strings into f-strings. These strings are evaluated at runtime
+# In a string, each character will have an index. And like arrays, string indexes are zero-based
+name = 'Farhan'
+print(name[0])
+print(name[1])
+# the output is F and a, in two lines
+print(name[0:3])
+# the output is Far, because is not included the character at the ending index
+print(len(name)) # output: 6
+# STRING METHODS
+print('python is awesome'.capitalize()) # Python is awesome
+print('python is awesome'.upper()) # PYTHON IS AWESOME
+print('PYTHON IS AWESOME'.lower()) # python is awesome
+print('PYTHON IS AWESOME'.islower()) # false
+print('PYTHON IS AWESOME'.isupper()) # true
+print('python is awesome'.replace('python', 'freeCodeCamp')) # freeCodeCamp is awesome
+print('python is awesome'.split(' '))
+'''The method takes a delimiter to split the string on. Here, I've used space as the delimiter. 
+Output of this code will be ['python', 'is', 'awesome']. This is a list. '''
+print(' '.join(['python', 'is', 'awesome'])) # python is awesome
+
+# NUMBERS
+a = 10
+b = 5
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+'''even if you perform a division operation between two integers, the result will always be a floating point. 
+If you want the result to be an integer, you can do so as follows:'''
+print(a//b)
+
+# Converting strings into float
+num1 = "10.1"
+num2 = "5.3"
+result = float(num1) + float(num2)
+print(result)
+print("{:.1f}".format(result)) # rounding the number specifying the decimal places
+
+
+# USER INPUT
+name = input('What is your name? ')
+print(f'Your name is {name}')
+
+# CONDITIONALS
+a = float(input('First: '))
+b = float(input('Second: '))
+op = input('Operation (sum/sub/mul/div): ')
+print('Hello, World!')
+''' print() functions as new line character by default and you can override this default behavior as follows:
+    any string passed as the value of the end parameter will be used as the terminating character of the printed line'''
+print('Hello, World!', end=' | ')
+print(100, end=' | ')
+print(5 + 5)
+# VARIABLES
+name = 'Farhan'
+age = 27
+print('My name is ' + name)
+# print('I am ' + age + 'years old') -->  this code produces an ERROR
+# strings can be concatenated with strings only
+# age is an integer, so a better way is embedding variables within string statements.
+print(f'My name is {name}')
+print(f'I am {age} years old')
+# f turns the strings into f-strings. These strings are evaluated at runtime
+# In a string, each character will have an index. And like arrays, string indexes are zero-based
+name = 'Farhan'
+print(name[0])
+print(name[1])
+# the output is F and a, in two lines
+print(name[0:3])
+# the output is Far, because is not included the character at the ending index
+print(len(name)) # output: 6
+# STRING METHODS
+print('python is awesome'.capitalize()) # Python is awesome
+print('python is awesome'.upper()) # PYTHON IS AWESOME
+print('PYTHON IS AWESOME'.lower()) # python is awesome
+print('PYTHON IS AWESOME'.islower()) # false
+print('PYTHON IS AWESOME'.isupper()) # true
+print('python is awesome'.replace('python', 'freeCodeCamp')) # freeCodeCamp is awesome
+print('python is awesome'.split(' '))
+'''The method takes a delimiter to split the string on. Here, I've used space as the delimiter. 
+Output of this code will be ['python', 'is', 'awesome']. This is a list. '''
+print(' '.join(['python', 'is', 'awesome'])) # python is awesome
+
+# NUMBERS
+a = 10
+b = 5
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+'''even if you perform a division operation between two integers, the result will always be a floating point. 
+If you want the result to be an integer, you can do so as follows:'''
+print(a//b)
+
+# Converting strings into float
+num1 = "10.1"
+num2 = "5.3"
+result = float(num1) + float(num2)
+print(result)
+print("{:.1f}".format(result)) # rounding the number specifying the decimal places
+
+
+# USER INPUT
+name = input('What is your name? ')
+print(f'Your name is {name}')
+
+# CONDITIONALS
+a = float(input('First: '))
+b = float(input('Second: '))
+op = input('Operation (sum/sub/mul/div): ')
+print('Hello, World!')
+''' print() functions as new line character by default and you can override this default behavior as follows:
+    any string passed as the value of the end parameter will be used as the terminating character of the printed line'''
+print('Hello, World!', end=' | ')
+print(100, end=' | ')
+print(5 + 5)
+# VARIABLES
+name = 'Farhan'
+age = 27
+print('My name is ' + name)
+# print('I am ' + age + 'years old') -->  this code produces an ERROR
+# strings can be concatenated with strings only
+# age is an integer, so a better way is embedding variables within string statements.
+print(f'My name is {name}')
+print(f'I am {age} years old')
+# f turns the strings into f-strings. These strings are evaluated at runtime
+# In a string, each character will have an index. And like arrays, string indexes are zero-based
+name = 'Farhan'
+print(name[0])
+print(name[1])
+# the output is F and a, in two lines
+print(name[0:3])
+# the output is Far, because is not included the character at the ending index
+print(len(name)) # output: 6
+# STRING METHODS
+print('python is awesome'.capitalize()) # Python is awesome
+print('python is awesome'.upper()) # PYTHON IS AWESOME
+print('PYTHON IS AWESOME'.lower()) # python is awesome
+print('PYTHON IS AWESOME'.islower()) # false
+print('PYTHON IS AWESOME'.isupper()) # true
+print('python is awesome'.replace('python', 'freeCodeCamp')) # freeCodeCamp is awesome
+print('python is awesome'.split(' '))
+'''The method takes a delimiter to split the string on. Here, I've used space as the delimiter. 
+Output of this code will be ['python', 'is', 'awesome']. This is a list. '''
+print(' '.join(['python', 'is', 'awesome'])) # python is awesome
+
+# NUMBERS
+a = 10
+b = 5
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+'''even if you perform a division operation between two integers, the result will always be a floating point. 
+If you want the result to be an integer, you can do so as follows:'''
+print(a//b)
+
+# Converting strings into float
+num1 = "10.1"
+num2 = "5.3"
+result = float(num1) + float(num2)
+print(result)
+print("{:.1f}".format(result)) # rounding the number specifying the decimal places
+
+
+# USER INPUT
+name = input('What is your name? ')
+print(f'Your name is {name}')
+
+# CONDITIONALS
+a = float(input('First: '))
+b = float(input('Second: '))
+op = input('Operation (sum/sub/mul/div): ')
+print('Hello, World!')
+''' print() functions as new line character by default and you can override this default behavior as follows:
+    any string passed as the value of the end parameter will be used as the terminating character of the printed line'''
+print('Hello, World!', end=' | ')
+print(100, end=' | ')
+print(5 + 5)
+# VARIABLES
+name = 'Farhan'
+age = 27
+print('My name is ' + name)
+# print('I am ' + age + 'years old') -->  this code produces an ERROR
+# strings can be concatenated with strings only
+# age is an integer, so a better way is embedding variables within string statements.
+print(f'My name is {name}')
+print(f'I am {age} years old')
+# f turns the strings into f-strings. These strings are evaluated at runtime
+# In a string, each character will have an index. And like arrays, string indexes are zero-based
+name = 'Farhan'
+print(name[0])
+print(name[1])
+# the output is F and a, in two lines
+print(name[0:3])
+# the output is Far, because is not included the character at the ending index
+print(len(name)) # output: 6
+# STRING METHODS
+print('python is awesome'.capitalize()) # Python is awesome
+print('python is awesome'.upper()) # PYTHON IS AWESOME
+print('PYTHON IS AWESOME'.lower()) # python is awesome
+print('PYTHON IS AWESOME'.islower()) # false
+print('PYTHON IS AWESOME'.isupper()) # true
+print('python is awesome'.replace('python', 'freeCodeCamp')) # freeCodeCamp is awesome
+print('python is awesome'.split(' '))
+'''The method takes a delimiter to split the string on. Here, I've used space as the delimiter. 
+Output of this code will be ['python', 'is', 'awesome']. This is a list. '''
+print(' '.join(['python', 'is', 'awesome'])) # python is awesome
+
+# NUMBERS
+a = 10
+b = 5
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+'''even if you perform a division operation between two integers, the result will always be a floating point. 
+If you want the result to be an integer, you can do so as follows:'''
+print(a//b)
+
+# Converting strings into float
+num1 = "10.1"
+num2 = "5.3"
+result = float(num1) + float(num2)
+print(result)
+print("{:.1f}".format(result)) # rounding the number specifying the decimal places
+
+
+# USER INPUT
+name = input('What is your name? ')
+print(f'Your name is {name}')
+
+# CONDITIONALS
+a = float(input('First: '))
+b = float(input('Second: '))
+op = input('Operation (sum/sub/mul/div): ')
+print('Hello, World!')
+''' print() functions as new line character by default and you can override this default behavior as follows:
+    any string passed as the value of the end parameter will be used as the terminating character of the printed line'''
+print('Hello, World!', end=' | ')
+print(100, end=' | ')
+print(5 + 5)
+# VARIABLES
+name = 'Farhan'
+age = 27
+print('My name is ' + name)
+# print('I am ' + age + 'years old') -->  this code produces an ERROR
+# strings can be concatenated with strings only
+# age is an integer, so a better way is embedding variables within string statements.
+print(f'My name is {name}')
+print(f'I am {age} years old')
+# f turns the strings into f-strings. These strings are evaluated at runtime
+# In a string, each character will have an index. And like arrays, string indexes are zero-based
+name = 'Farhan'
+print(name[0])
+print(name[1])
+# the output is F and a, in two lines
+print(name[0:3])
+# the output is Far, because is not included the character at the ending index
+print(len(name)) # output: 6
+# STRING METHODS
+print('python is awesome'.capitalize()) # Python is awesome
+print('python is awesome'.upper()) # PYTHON IS AWESOME
+print('PYTHON IS AWESOME'.lower()) # python is awesome
+print('PYTHON IS AWESOME'.islower()) # false
+print('PYTHON IS AWESOME'.isupper()) # true
+print('python is awesome'.replace('python', 'freeCodeCamp')) # freeCodeCamp is awesome
+print('python is awesome'.split(' '))
+'''The method takes a delimiter to split the string on. Here, I've used space as the delimiter. 
+Output of this code will be ['python', 'is', 'awesome']. This is a list. '''
+print(' '.join(['python', 'is', 'awesome'])) # python is awesome
+
+# NUMBERS
+a = 10
+b = 5
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+'''even if you perform a division operation between two integers, the result will always be a floating point. 
+If you want the result to be an integer, you can do so as follows:'''
+print(a//b)
+
+# Converting strings into float
+num1 = "10.1"
+num2 = "5.3"
+result = float(num1) + float(num2)
+print(result)
+print("{:.1f}".format(result)) # rounding the number specifying the decimal places
+
+
+# USER INPUT
+name = input('What is your name? ')
+print(f'Your name is {name}')
+
+# CONDITIONALS
+a = float(input('First: '))
+b = float(input('Second: '))
+op = input('Operation (sum/sub/mul/div): ')
+print('Hello, World!')
+''' print() functions as new line character by default and you can override this default behavior as follows:
+    any string passed as the value of the end parameter will be used as the terminating character of the printed line'''
+print('Hello, World!', end=' | ')
+print(100, end=' | ')
+print(5 + 5)
+# VARIABLES
+name = 'Farhan'
+age = 27
+print('My name is ' + name)
+# print('I am ' + age + 'years old') -->  this code produces an ERROR
+# strings can be concatenated with strings only
+# age is an integer, so a better way is embedding variables within string statements.
+print(f'My name is {name}')
+print(f'I am {age} years old')
+# f turns the strings into f-strings. These strings are evaluated at runtime
+# In a string, each character will have an index. And like arrays, string indexes are zero-based
+name = 'Farhan'
+print(name[0])
+print(name[1])
+# the output is F and a, in two lines
+print(name[0:3])
+# the output is Far, because is not included the character at the ending index
+print(len(name)) # output: 6
+# STRING METHODS
+print('python is awesome'.capitalize()) # Python is awesome
+print('python is awesome'.upper()) # PYTHON IS AWESOME
+print('PYTHON IS AWESOME'.lower()) # python is awesome
+print('PYTHON IS AWESOME'.islower()) # false
+print('PYTHON IS AWESOME'.isupper()) # true
+print('python is awesome'.replace('python', 'freeCodeCamp')) # freeCodeCamp is awesome
+print('python is awesome'.split(' '))
+'''The method takes a delimiter to split the string on. Here, I've used space as the delimiter. 
+Output of this code will be ['python', 'is', 'awesome']. This is a list. '''
+print(' '.join(['python', 'is', 'awesome'])) # python is awesome
+
+# NUMBERS
+a = 10
+b = 5
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+'''even if you perform a division operation between two integers, the result will always be a floating point. 
+If you want the result to be an integer, you can do so as follows:'''
+print(a//b)
+
+# Converting strings into float
+num1 = "10.1"
+num2 = "5.3"
+result = float(num1) + float(num2)
+print(result)
+print("{:.1f}".format(result)) # rounding the number specifying the decimal places
+
+
+# USER INPUT
+name = input('What is your name? ')
+print(f'Your name is {name}')
+
+# CONDITIONALS
+a = float(input('First: '))
+b = float(input('Second: '))
+op = input('Operation (sum/sub/mul/div): ')
+print('Hello, World!')
+''' print() functions as new line character by default and you can override this default behavior as follows:
+    any string passed as the value of the end parameter will be used as the terminating character of the printed line'''
+print('Hello, World!', end=' | ')
+print(100, end=' | ')
+print(5 + 5)
+# VARIABLES
+name = 'Farhan'
+age = 27
+print('My name is ' + name)
+# print('I am ' + age + 'years old') -->  this code produces an ERROR
+# strings can be concatenated with strings only
+# age is an integer, so a better way is embedding variables within string statements.
+print(f'My name is {name}')
+print(f'I am {age} years old')
+# f turns the strings into f-strings. These strings are evaluated at runtime
+# In a string, each character will have an index. And like arrays, string indexes are zero-based
+name = 'Farhan'
+print(name[0])
+print(name[1])
+# the output is F and a, in two lines
+print(name[0:3])
+# the output is Far, because is not included the character at the ending index
+print(len(name)) # output: 6
+# STRING METHODS
+print('python is awesome'.capitalize()) # Python is awesome
+print('python is awesome'.upper()) # PYTHON IS AWESOME
+print('PYTHON IS AWESOME'.lower()) # python is awesome
+print('PYTHON IS AWESOME'.islower()) # false
+print('PYTHON IS AWESOME'.isupper()) # true
+print('python is awesome'.replace('python', 'freeCodeCamp')) # freeCodeCamp is awesome
+print('python is awesome'.split(' '))
+'''The method takes a delimiter to split the string on. Here, I've used space as the delimiter. 
+Output of this code will be ['python', 'is', 'awesome']. This is a list. '''
+print(' '.join(['python', 'is', 'awesome'])) # python is awesome
+
+# NUMBERS
+a = 10
+b = 5
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+'''even if you perform a division operation between two integers, the result will always be a floating point. 
+If you want the result to be an integer, you can do so as follows:'''
+print(a//b)
+
+# Converting strings into float
+num1 = "10.1"
+num2 = "5.3"
+result = float(num1) + float(num2)
+print(result)
+print("{:.1f}".format(result)) # rounding the number specifying the decimal places
+
+
+# USER INPUT
+name = input('What is your name? ')
+print(f'Your name is {name}')
+
+# CONDITIONALS
+a = float(input('First: '))
+b = float(input('Second: '))
+op = input('Operation (sum/sub/mul/div): ')
+print('Hello, World!')
+''' print() functions as new line character by default and you can override this default behavior as follows:
+    any string passed as the value of the end parameter will be used as the terminating character of the printed line'''
+print('Hello, World!', end=' | ')
+print(100, end=' | ')
+print(5 + 5)
+# VARIABLES
+name = 'Farhan'
+age = 27
+print('My name is ' + name)
+# print('I am ' + age + 'years old') -->  this code produces an ERROR
+# strings can be concatenated with strings only
+# age is an integer, so a better way is embedding variables within string statements.
+print(f'My name is {name}')
+print(f'I am {age} years old')
+# f turns the strings into f-strings. These strings are evaluated at runtime
+# In a string, each character will have an index. And like arrays, string indexes are zero-based
+name = 'Farhan'
+print(name[0])
+print(name[1])
+# the output is F and a, in two lines
+print(name[0:3])
+# the output is Far, because is not included the character at the ending index
+print(len(name)) # output: 6
+# STRING METHODS
+print('python is awesome'.capitalize()) # Python is awesome
+print('python is awesome'.upper()) # PYTHON IS AWESOME
+print('PYTHON IS AWESOME'.lower()) # python is awesome
+print('PYTHON IS AWESOME'.islower()) # false
+print('PYTHON IS AWESOME'.isupper()) # true
+print('python is awesome'.replace('python', 'freeCodeCamp')) # freeCodeCamp is awesome
+print('python is awesome'.split(' '))
+'''The method takes a delimiter to split the string on. Here, I've used space as the delimiter. 
+Output of this code will be ['python', 'is', 'awesome']. This is a list. '''
+print(' '.join(['python', 'is', 'awesome'])) # python is awesome
+
+# NUMBERS
+a = 10
+b = 5
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+'''even if you perform a division operation between two integers, the result will always be a floating point. 
+If you want the result to be an integer, you can do so as follows:'''
+print(a//b)
+
+# Converting strings into float
+num1 = "10.1"
+num2 = "5.3"
+result = float(num1) + float(num2)
+print(result)
+print("{:.1f}".format(result)) # rounding the number specifying the decimal places
+
+
+# USER INPUT
+name = input('What is your name? ')
+print(f'Your name is {name}')
+
+# CONDITIONALS
+a = float(input('First: '))
+b = float(input('Second: '))
+op = input('Operation (sum/sub/mul/div): ')
+print('Hello, World!')
+''' print() functions as new line character by default and you can override this default behavior as follows:
+    any string passed as the value of the end parameter will be used as the terminating character of the printed line'''
+print('Hello, World!', end=' | ')
+print(100, end=' | ')
+print(5 + 5)
+# VARIABLES
+name = 'Farhan'
+age = 27
+print('My name is ' + name)
+# print('I am ' + age + 'years old') -->  this code produces an ERROR
+# strings can be concatenated with strings only
+# age is an integer, so a better way is embedding variables within string statements.
+print(f'My name is {name}')
+print(f'I am {age} years old')
+# f turns the strings into f-strings. These strings are evaluated at runtime
+# In a string, each character will have an index. And like arrays, string indexes are zero-based
+name = 'Farhan'
+print(name[0])
+print(name[1])
+# the output is F and a, in two lines
+print(name[0:3])
+# the output is Far, because is not included the character at the ending index
+print(len(name)) # output: 6
+# STRING METHODS
+print('python is awesome'.capitalize()) # Python is awesome
+print('python is awesome'.upper()) # PYTHON IS AWESOME
+print('PYTHON IS AWESOME'.lower()) # python is awesome
+print('PYTHON IS AWESOME'.islower()) # false
+print('PYTHON IS AWESOME'.isupper()) # true
+print('python is awesome'.replace('python', 'freeCodeCamp')) # freeCodeCamp is awesome
+print('python is awesome'.split(' '))
+'''The method takes a delimiter to split the string on. Here, I've used space as the delimiter. 
+Output of this code will be ['python', 'is', 'awesome']. This is a list. '''
+print(' '.join(['python', 'is', 'awesome'])) # python is awesome
+
+# NUMBERS
+a = 10
+b = 5
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+'''even if you perform a division operation between two integers, the result will always be a floating point. 
+If you want the result to be an integer, you can do so as follows:'''
+print(a//b)
+
+# Converting strings into float
+num1 = "10.1"
+num2 = "5.3"
+result = float(num1) + float(num2)
+print(result)
+print("{:.1f}".format(result)) # rounding the number specifying the decimal places
+
+
+# USER INPUT
+name = input('What is your name? ')
+print(f'Your name is {name}')
+
+# CONDITIONALS
+a = float(input('First: '))
+b = float(input('Second: '))
+op = input('Operation (sum/sub/mul/div): ')
+print('Hello, World!')
+''' print() functions as new line character by default and you can override this default behavior as follows:
+    any string passed as the value of the end parameter will be used as the terminating character of the printed line'''
+print('Hello, World!', end=' | ')
+print(100, end=' | ')
+print(5 + 5)
+# VARIABLES
+name = 'Farhan'
+age = 27
+print('My name is ' + name)
+# print('I am ' + age + 'years old') -->  this code produces an ERROR
+# strings can be concatenated with strings only
+# age is an integer, so a better way is embedding variables within string statements.
+print(f'My name is {name}')
+print(f'I am {age} years old')
+# f turns the strings into f-strings. These strings are evaluated at runtime
+# In a string, each character will have an index. And like arrays, string indexes are zero-based
+name = 'Farhan'
+print(name[0])
+print(name[1])
+# the output is F and a, in two lines
+print(name[0:3])
+# the output is Far, because is not included the character at the ending index
+print(len(name)) # output: 6
+# STRING METHODS
+print('python is awesome'.capitalize()) # Python is awesome
+print('python is awesome'.upper()) # PYTHON IS AWESOME
+print('PYTHON IS AWESOME'.lower()) # python is awesome
+print('PYTHON IS AWESOME'.islower()) # false
+print('PYTHON IS AWESOME'.isupper()) # true
+print('python is awesome'.replace('python', 'freeCodeCamp')) # freeCodeCamp is awesome
+print('python is awesome'.split(' '))
+'''The method takes a delimiter to split the string on. Here, I've used space as the delimiter. 
+Output of this code will be ['python', 'is', 'awesome']. This is a list. '''
+print(' '.join(['python', 'is', 'awesome'])) # python is awesome
+
+# NUMBERS
+a = 10
+b = 5
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+'''even if you perform a division operation between two integers, the result will always be a floating point. 
+If you want the result to be an integer, you can do so as follows:'''
+print(a//b)
+
+# Converting strings into float
+num1 = "10.1"
+num2 = "5.3"
+result = float(num1) + float(num2)
+print(result)
+print("{:.1f}".format(result)) # rounding the number specifying the decimal places
+
+
+# USER INPUT
+name = input('What is your name? ')
+print(f'Your name is {name}')
+
+# CONDITIONALS
+a = float(input('First: '))
+b = float(input('Second: '))
+op = input('Operation (sum/sub/mul/div): ')
+print('Hello, World!')
+''' print() functions as new line character by default and you can override this default behavior as follows:
+    any string passed as the value of the end parameter will be used as the terminating character of the printed line'''
+print('Hello, World!', end=' | ')
+print(100, end=' | ')
+print(5 + 5)
+# VARIABLES
+name = 'Farhan'
+age = 27
+print('My name is ' + name)
+# print('I am ' + age + 'years old') -->  this code produces an ERROR
+# strings can be concatenated with strings only
+# age is an integer, so a better way is embedding variables within string statements.
+print(f'My name is {name}')
+print(f'I am {age} years old')
+# f turns the strings into f-strings. These strings are evaluated at runtime
+# In a string, each character will have an index. And like arrays, string indexes are zero-based
+name = 'Farhan'
+print(name[0])
+print(name[1])
+# the output is F and a, in two lines
+print(name[0:3])
+# the output is Far, because is not included the character at the ending index
+print(len(name)) # output: 6
+# STRING METHODS
+print('python is awesome'.capitalize()) # Python is awesome
+print('python is awesome'.upper()) # PYTHON IS AWESOME
+print('PYTHON IS AWESOME'.lower()) # python is awesome
+print('PYTHON IS AWESOME'.islower()) # false
+print('PYTHON IS AWESOME'.isupper()) # true
+print('python is awesome'.replace('python', 'freeCodeCamp')) # freeCodeCamp is awesome
+print('python is awesome'.split(' '))
+'''The method takes a delimiter to split the string on. Here, I've used space as the delimiter. 
+Output of this code will be ['python', 'is', 'awesome']. This is a list. '''
+print(' '.join(['python', 'is', 'awesome'])) # python is awesome
+
+# NUMBERS
+a = 10
+b = 5
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+'''even if you perform a division operation between two integers, the result will always be a floating point. 
+If you want the result to be an integer, you can do so as follows:'''
+print(a//b)
+
+# Converting strings into float
+num1 = "10.1"
+num2 = "5.3"
+result = float(num1) + float(num2)
+print(result)
+print("{:.1f}".format(result)) # rounding the number specifying the decimal places
+
+
+# USER INPUT
+name = input('What is your name? ')
+print(f'Your name is {name}')
+
+# CONDITIONALS
+a = float(input('First: '))
+b = float(input('Second: '))
+op = input('Operation (sum/sub/mul/div): ')
+print('Hello, World!')
+''' print() functions as new line character by default and you can override this default behavior as follows:
+    any string passed as the value of the end parameter will be used as the terminating character of the printed line'''
+print('Hello, World!', end=' | ')
+print(100, end=' | ')
+print(5 + 5)
+# VARIABLES
+name = 'Farhan'
+age = 27
+print('My name is ' + name)
+# print('I am ' + age + 'years old') -->  this code produces an ERROR
+# strings can be concatenated with strings only
+# age is an integer, so a better way is embedding variables within string statements.
+print(f'My name is {name}')
+print(f'I am {age} years old')
+# f turns the strings into f-strings. These strings are evaluated at runtime
+# In a string, each character will have an index. And like arrays, string indexes are zero-based
+name = 'Farhan'
+print(name[0])
+print(name[1])
+# the output is F and a, in two lines
+print(name[0:3])
+# the output is Far, because is not included the character at the ending index
+print(len(name)) # output: 6
+# STRING METHODS
+print('python is awesome'.capitalize()) # Python is awesome
+print('python is awesome'.upper()) # PYTHON IS AWESOME
+print('PYTHON IS AWESOME'.lower()) # python is awesome
+print('PYTHON IS AWESOME'.islower()) # false
+print('PYTHON IS AWESOME'.isupper()) # true
+print('python is awesome'.replace('python', 'freeCodeCamp')) # freeCodeCamp is awesome
+print('python is awesome'.split(' '))
+'''The method takes a delimiter to split the string on. Here, I've used space as the delimiter. 
+Output of this code will be ['python', 'is', 'awesome']. This is a list. '''
+print(' '.join(['python', 'is', 'awesome'])) # python is awesome
+
+# NUMBERS
+a = 10
+b = 5
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+'''even if you perform a division operation between two integers, the result will always be a floating point. 
+If you want the result to be an integer, you can do so as follows:'''
+print(a//b)
+
+# Converting strings into float
+num1 = "10.1"
+num2 = "5.3"
+result = float(num1) + float(num2)
+print(result)
+print("{:.1f}".format(result)) # rounding the number specifying the decimal places
+
+
+# USER INPUT
+name = input('What is your name? ')
+print(f'Your name is {name}')
+
+# CONDITIONALS
+a = float(input('First: '))
+b = float(input('Second: '))
+op = input('Operation (sum/sub/mul/div): ')
+print('Hello, World!')
+''' print() functions as new line character by default and you can override this default behavior as follows:
+    any string passed as the value of the end parameter will be used as the terminating character of the printed line'''
+print('Hello, World!', end=' | ')
+print(100, end=' | ')
+print(5 + 5)
+# VARIABLES
+name = 'Farhan'
+age = 27
+print('My name is ' + name)
+# print('I am ' + age + 'years old') -->  this code produces an ERROR
+# strings can be concatenated with strings only
+# age is an integer, so a better way is embedding variables within string statements.
+print(f'My name is {name}')
+print(f'I am {age} years old')
+# f turns the strings into f-strings. These strings are evaluated at runtime
+# In a string, each character will have an index. And like arrays, string indexes are zero-based
+name = 'Farhan'
+print(name[0])
+print(name[1])
+# the output is F and a, in two lines
+print(name[0:3])
+# the output is Far, because is not included the character at the ending index
+print(len(name)) # output: 6
+# STRING METHODS
+print('python is awesome'.capitalize()) # Python is awesome
+print('python is awesome'.upper()) # PYTHON IS AWESOME
+print('PYTHON IS AWESOME'.lower()) # python is awesome
+print('PYTHON IS AWESOME'.islower()) # false
+print('PYTHON IS AWESOME'.isupper()) # true
+print('python is awesome'.replace('python', 'freeCodeCamp')) # freeCodeCamp is awesome
+print('python is awesome'.split(' '))
+'''The method takes a delimiter to split the string on. Here, I've used space as the delimiter. 
+Output of this code will be ['python', 'is', 'awesome']. This is a list. '''
+print(' '.join(['python', 'is', 'awesome'])) # python is awesome
+
+# NUMBERS
+a = 10
+b = 5
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+'''even if you perform a division operation between two integers, the result will always be a floating point. 
+If you want the result to be an integer, you can do so as follows:'''
+print(a//b)
+
+# Converting strings into float
+num1 = "10.1"
+num2 = "5.3"
+result = float(num1) + float(num2)
+print(result)
+print("{:.1f}".format(result)) # rounding the number specifying the decimal places
+
+
+# USER INPUT
+name = input('What is your name? ')
+print(f'Your name is {name}')
+
+# CONDITIONALS
+a = float(input('First: '))
+b = float(input('Second: '))
+op = input('Operation (sum/sub/mul/div): ')
+print('Hello, World!')
+''' print() functions as new line character by default and you can override this default behavior as follows:
+    any string passed as the value of the end parameter will be used as the terminating character of the printed line'''
+print('Hello, World!', end=' | ')
+print(100, end=' | ')
+print(5 + 5)
+# VARIABLES
+name = 'Farhan'
+age = 27
+print('My name is ' + name)
+# print('I am ' + age + 'years old') -->  this code produces an ERROR
+# strings can be concatenated with strings only
+# age is an integer, so a better way is embedding variables within string statements.
+print(f'My name is {name}')
+print(f'I am {age} years old')
+# f turns the strings into f-strings. These strings are evaluated at runtime
+# In a string, each character will have an index. And like arrays, string indexes are zero-based
+name = 'Farhan'
+print(name[0])
+print(name[1])
+# the output is F and a, in two lines
+print(name[0:3])
+# the output is Far, because is not included the character at the ending index
+print(len(name)) # output: 6
+# STRING METHODS
+print('python is awesome'.capitalize()) # Python is awesome
+print('python is awesome'.upper()) # PYTHON IS AWESOME
+print('PYTHON IS AWESOME'.lower()) # python is awesome
+print('PYTHON IS AWESOME'.islower()) # false
+print('PYTHON IS AWESOME'.isupper()) # true
+print('python is awesome'.replace('python', 'freeCodeCamp')) # freeCodeCamp is awesome
+print('python is awesome'.split(' '))
+'''The method takes a delimiter to split the string on. Here, I've used space as the delimiter. 
+Output of this code will be ['python', 'is', 'awesome']. This is a list. '''
+print(' '.join(['python', 'is', 'awesome'])) # python is awesome
+
+# NUMBERS
+a = 10
+b = 5
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+'''even if you perform a division operation between two integers, the result will always be a floating point. 
+If you want the result to be an integer, you can do so as follows:'''
+print(a//b)
+
+# Converting strings into float
+num1 = "10.1"
+num2 = "5.3"
+result = float(num1) + float(num2)
+print(result)
+print("{:.1f}".format(result)) # rounding the number specifying the decimal places
+
+
+# USER INPUT
+name = input('What is your name? ')
+print(f'Your name is {name}')
+
+# CONDITIONALS
+a = float(input('First: '))
+b = float(input('Second: '))
+op = input('Operation (sum/sub/mul/div): ')
+print('Hello, World!')
+''' print() functions as new line character by default and you can override this default behavior as follows:
+    any string passed as the value of the end parameter will be used as the terminating character of the printed line'''
+print('Hello, World!', end=' | ')
+print(100, end=' | ')
+print(5 + 5)
+# VARIABLES
+name = 'Farhan'
+age = 27
+print('My name is ' + name)
+# print('I am ' + age + 'years old') -->  this code produces an ERROR
+# strings can be concatenated with strings only
+# age is an integer, so a better way is embedding variables within string statements.
+print(f'My name is {name}')
+print(f'I am {age} years old')
+# f turns the strings into f-strings. These strings are evaluated at runtime
+# In a string, each character will have an index. And like arrays, string indexes are zero-based
+name = 'Farhan'
+print(name[0])
+print(name[1])
+# the output is F and a, in two lines
+print(name[0:3])
+# the output is Far, because is not included the character at the ending index
+print(len(name)) # output: 6
+# STRING METHODS
+print('python is awesome'.capitalize()) # Python is awesome
+print('python is awesome'.upper()) # PYTHON IS AWESOME
+print('PYTHON IS AWESOME'.lower()) # python is awesome
+print('PYTHON IS AWESOME'.islower()) # false
+print('PYTHON IS AWESOME'.isupper()) # true
+print('python is awesome'.replace('python', 'freeCodeCamp')) # freeCodeCamp is awesome
+print('python is awesome'.split(' '))
+'''The method takes a delimiter to split the string on. Here, I've used space as the delimiter. 
+Output of this code will be ['python', 'is', 'awesome']. This is a list. '''
+print(' '.join(['python', 'is', 'awesome'])) # python is awesome
+
+# NUMBERS
+a = 10
+b = 5
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+'''even if you perform a division operation between two integers, the result will always be a floating point. 
+If you want the result to be an integer, you can do so as follows:'''
+print(a//b)
+
+# Converting strings into float
+num1 = "10.1"
+num2 = "5.3"
+result = float(num1) + float(num2)
+print(result)
+print("{:.1f}".format(result)) # rounding the number specifying the decimal places
+
+
+# USER INPUT
+name = input('What is your name? ')
+print(f'Your name is {name}')
+
+# CONDITIONALS
+a = float(input('First: '))
+b = float(input('Second: '))
+op = input('Operation (sum/sub/mul/div): ')
+print('Hello, World!')
+''' print() functions as new line character by default and you can override this default behavior as follows:
+    any string passed as the value of the end parameter will be used as the terminating character of the printed line'''
+print('Hello, World!', end=' | ')
+print(100, end=' | ')
+print(5 + 5)
+# VARIABLES
+name = 'Farhan'
+age = 27
+print('My name is ' + name)
+# print('I am ' + age + 'years old') -->  this code produces an ERROR
+# strings can be concatenated with strings only
+# age is an integer, so a better way is embedding variables within string statements.
+print(f'My name is {name}')
+print(f'I am {age} years old')
+# f turns the strings into f-strings. These strings are evaluated at runtime
+# In a string, each character will have an index. And like arrays, string indexes are zero-based
+name = 'Farhan'
+print(name[0])
+print(name[1])
+# the output is F and a, in two lines
+print(name[0:3])
+# the output is Far, because is not included the character at the ending index
+print(len(name)) # output: 6
+# STRING METHODS
+print('python is awesome'.capitalize()) # Python is awesome
+print('python is awesome'.upper()) # PYTHON IS AWESOME
+print('PYTHON IS AWESOME'.lower()) # python is awesome
+print('PYTHON IS AWESOME'.islower()) # false
+print('PYTHON IS AWESOME'.isupper()) # true
+print('python is awesome'.replace('python', 'freeCodeCamp')) # freeCodeCamp is awesome
+print('python is awesome'.split(' '))
+'''The method takes a delimiter to split the string on. Here, I've used space as the delimiter. 
+Output of this code will be ['python', 'is', 'awesome']. This is a list. '''
+print(' '.join(['python', 'is', 'awesome'])) # python is awesome
+
+# NUMBERS
+a = 10
+b = 5
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+'''even if you perform a division operation between two integers, the result will always be a floating point. 
+If you want the result to be an integer, you can do so as follows:'''
+print(a//b)
+
+# Converting strings into float
+num1 = "10.1"
+num2 = "5.3"
+result = float(num1) + float(num2)
+print(result)
+print("{:.1f}".format(result)) # rounding the number specifying the decimal places
+
+
+# USER INPUT
+name = input('What is your name? ')
+print(f'Your name is {name}')
+
+# CONDITIONALS
+a = float(input('First: '))
+b = float(input('Second: '))
+op = input('Operation (sum/sub/mul/div): ')
+print('Hello, World!')
+''' print() functions as new line character by default and you can override this default behavior as follows:
+    any string passed as the value of the end parameter will be used as the terminating character of the printed line'''
+print('Hello, World!', end=' | ')
+print(100, end=' | ')
+print(5 + 5)
+# VARIABLES
+name = 'Farhan'
+age = 27
+print('My name is ' + name)
+# print('I am ' + age + 'years old') -->  this code produces an ERROR
+# strings can be concatenated with strings only
+# age is an integer, so a better way is embedding variables within string statements.
+print(f'My name is {name}')
+print(f'I am {age} years old')
+# f turns the strings into f-strings. These strings are evaluated at runtime
+# In a string, each character will have an index. And like arrays, string indexes are zero-based
+name = 'Farhan'
+print(name[0])
+print(name[1])
+# the output is F and a, in two lines
+print(name[0:3])
+# the output is Far, because is not included the character at the ending index
+print(len(name)) # output: 6
+# STRING METHODS
+print('python is awesome'.capitalize()) # Python is awesome
+print('python is awesome'.upper()) # PYTHON IS AWESOME
+print('PYTHON IS AWESOME'.lower()) # python is awesome
+print('PYTHON IS AWESOME'.islower()) # false
+print('PYTHON IS AWESOME'.isupper()) # true
+print('python is awesome'.replace('python', 'freeCodeCamp')) # freeCodeCamp is awesome
+print('python is awesome'.split(' '))
+'''The method takes a delimiter to split the string on. Here, I've used space as the delimiter. 
+Output of this code will be ['python', 'is', 'awesome']. This is a list. '''
+print(' '.join(['python', 'is', 'awesome'])) # python is awesome
+
+# NUMBERS
+a = 10
+b = 5
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+'''even if you perform a division operation between two integers, the result will always be a floating point. 
+If you want the result to be an integer, you can do so as follows:'''
+print(a//b)
+
+# Converting strings into float
+num1 = "10.1"
+num2 = "5.3"
+result = float(num1) + float(num2)
+print(result)
+print("{:.1f}".format(result)) # rounding the number specifying the decimal places
+
+
+# USER INPUT
+name = input('What is your name? ')
+print(f'Your name is {name}')
+
+# CONDITIONALS
+a = float(input('First: '))
+b = float(input('Second: '))
+op = input('Operation (sum/sub/mul/div): ')
+print('Hello, World!')
+''' print() functions as new line character by default and you can override this default behavior as follows:
+    any string passed as the value of the end parameter will be used as the terminating character of the printed line'''
+print('Hello, World!', end=' | ')
+print(100, end=' | ')
+print(5 + 5)
+# VARIABLES
+name = 'Farhan'
+age = 27
+print('My name is ' + name)
+# print('I am ' + age + 'years old') -->  this code produces an ERROR
+# strings can be concatenated with strings only
+# age is an integer, so a better way is embedding variables within string statements.
+print(f'My name is {name}')
+print(f'I am {age} years old')
+# f turns the strings into f-strings. These strings are evaluated at runtime
+# In a string, each character will have an index. And like arrays, string indexes are zero-based
+name = 'Farhan'
+print(name[0])
+print(name[1])
+# the output is F and a, in two lines
+print(name[0:3])
+# the output is Far, because is not included the character at the ending index
+print(len(name)) # output: 6
+# STRING METHODS
+print('python is awesome'.capitalize()) # Python is awesome
+print('python is awesome'.upper()) # PYTHON IS AWESOME
+print('PYTHON IS AWESOME'.lower()) # python is awesome
+print('PYTHON IS AWESOME'.islower()) # false
+print('PYTHON IS AWESOME'.isupper()) # true
+print('python is awesome'.replace('python', 'freeCodeCamp')) # freeCodeCamp is awesome
+print('python is awesome'.split(' '))
+'''The method takes a delimiter to split the string on. Here, I've used space as the delimiter. 
+Output of this code will be ['python', 'is', 'awesome']. This is a list. '''
+print(' '.join(['python', 'is', 'awesome'])) # python is awesome
+
+# NUMBERS
+a = 10
+b = 5
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+'''even if you perform a division operation between two integers, the result will always be a floating point. 
+If you want the result to be an integer, you can do so as follows:'''
+print(a//b)
+
+# Converting strings into float
+num1 = "10.1"
+num2 = "5.3"
+result = float(num1) + float(num2)
+print(result)
+print("{:.1f}".format(result)) # rounding the number specifying the decimal places
+
+
+# USER INPUT
+name = input('What is your name? ')
+print(f'Your name is {name}')
+
+# CONDITIONALS
+a = float(input('First: '))
+b = float(input('Second: '))
+op = input('Operation (sum/sub/mul/div): ')
+print('Hello, World!')
+''' print() functions as new line character by default and you can override this default behavior as follows:
+    any string passed as the value of the end parameter will be used as the terminating character of the printed line'''
+print('Hello, World!', end=' | ')
+print(100, end=' | ')
+print(5 + 5)
+# VARIABLES
+name = 'Farhan'
+age = 27
+print('My name is ' + name)
+# print('I am ' + age + 'years old') -->  this code produces an ERROR
+# strings can be concatenated with strings only
+# age is an integer, so a better way is embedding variables within string statements.
+print(f'My name is {name}')
+print(f'I am {age} years old')
+# f turns the strings into f-strings. These strings are evaluated at runtime
+# In a string, each character will have an index. And like arrays, string indexes are zero-based
+name = 'Farhan'
+print(name[0])
+print(name[1])
+# the output is F and a, in two lines
+print(name[0:3])
+# the output is Far, because is not included the character at the ending index
+print(len(name)) # output: 6
+# STRING METHODS
+print('python is awesome'.capitalize()) # Python is awesome
+print('python is awesome'.upper()) # PYTHON IS AWESOME
+print('PYTHON IS AWESOME'.lower()) # python is awesome
+print('PYTHON IS AWESOME'.islower()) # false
+print('PYTHON IS AWESOME'.isupper()) # true
+print('python is awesome'.replace('python', 'freeCodeCamp')) # freeCodeCamp is awesome
+print('python is awesome'.split(' '))
+'''The method takes a delimiter to split the string on. Here, I've used space as the delimiter. 
+Output of this code will be ['python', 'is', 'awesome']. This is a list. '''
+print(' '.join(['python', 'is', 'awesome'])) # python is awesome
+
+# NUMBERS
+a = 10
+b = 5
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+'''even if you perform a division operation between two integers, the result will always be a floating point. 
+If you want the result to be an integer, you can do so as follows:'''
+print(a//b)
+
+# Converting strings into float
+num1 = "10.1"
+num2 = "5.3"
+result = float(num1) + float(num2)
+print(result)
+print("{:.1f}".format(result)) # rounding the number specifying the decimal places
+
+
+# USER INPUT
+name = input('What is your name? ')
+print(f'Your name is {name}')
+
+# CONDITIONALS
+a = float(input('First: '))
+b = float(input('Second: '))
+op = input('Operation (sum/sub/mul/div): ')
+print('Hello, World!')
+''' print() functions as new line character by default and you can override this default behavior as follows:
+    any string passed as the value of the end parameter will be used as the terminating character of the printed line'''
+print('Hello, World!', end=' | ')
+print(100, end=' | ')
+print(5 + 5)
+# VARIABLES
+name = 'Farhan'
+age = 27
+print('My name is ' + name)
+# print('I am ' + age + 'years old') -->  this code produces an ERROR
+# strings can be concatenated with strings only
+# age is an integer, so a better way is embedding variables within string statements.
+print(f'My name is {name}')
+print(f'I am {age} years old')
+# f turns the strings into f-strings. These strings are evaluated at runtime
+# In a string, each character will have an index. And like arrays, string indexes are zero-based
+name = 'Farhan'
+print(name[0])
+print(name[1])
+# the output is F and a, in two lines
+print(name[0:3])
+# the output is Far, because is not included the character at the ending index
+print(len(name)) # output: 6
+# STRING METHODS
+print('python is awesome'.capitalize()) # Python is awesome
+print('python is awesome'.upper()) # PYTHON IS AWESOME
+print('PYTHON IS AWESOME'.lower()) # python is awesome
+print('PYTHON IS AWESOME'.islower()) # false
+print('PYTHON IS AWESOME'.isupper()) # true
+print('python is awesome'.replace('python', 'freeCodeCamp')) # freeCodeCamp is awesome
+print('python is awesome'.split(' '))
+'''The method takes a delimiter to split the string on. Here, I've used space as the delimiter. 
+Output of this code will be ['python', 'is', 'awesome']. This is a list. '''
+print(' '.join(['python', 'is', 'awesome'])) # python is awesome
+
+# NUMBERS
+a = 10
+b = 5
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+'''even if you perform a division operation between two integers, the result will always be a floating point. 
+If you want the result to be an integer, you can do so as follows:'''
+print(a//b)
+
+# Converting strings into float
+num1 = "10.1"
+num2 = "5.3"
+result = float(num1) + float(num2)
+print(result)
+print("{:.1f}".format(result)) # rounding the number specifying the decimal places
+
+
+# USER INPUT
+name = input('What is your name? ')
+print(f'Your name is {name}')
+
+# CONDITIONALS
+a = float(input('First: '))
+b = float(input('Second: '))
+op = input('Operation (sum/sub/mul/div): ')
+print('Hello, World!')
+''' print() functions as new line character by default and you can override this default behavior as follows:
+    any string passed as the value of the end parameter will be used as the terminating character of the printed line'''
+print('Hello, World!', end=' | ')
+print(100, end=' | ')
+print(5 + 5)
+# VARIABLES
+name = 'Farhan'
+age = 27
+print('My name is ' + name)
+# print('I am ' + age + 'years old') -->  this code produces an ERROR
+# strings can be concatenated with strings only
+# age is an integer, so a better way is embedding variables within string statements.
+print(f'My name is {name}')
+print(f'I am {age} years old')
+# f turns the strings into f-strings. These strings are evaluated at runtime
+# In a string, each character will have an index. And like arrays, string indexes are zero-based
+name = 'Farhan'
+print(name[0])
+print(name[1])
+# the output is F and a, in two lines
+print(name[0:3])
+# the output is Far, because is not included the character at the ending index
+print(len(name)) # output: 6
+# STRING METHODS
+print('python is awesome'.capitalize()) # Python is awesome
+print('python is awesome'.upper()) # PYTHON IS AWESOME
+print('PYTHON IS AWESOME'.lower()) # python is awesome
+print('PYTHON IS AWESOME'.islower()) # false
+print('PYTHON IS AWESOME'.isupper()) # true
+print('python is awesome'.replace('python', 'freeCodeCamp')) # freeCodeCamp is awesome
+print('python is awesome'.split(' '))
+'''The method takes a delimiter to split the string on. Here, I've used space as the delimiter. 
+Output of this code will be ['python', 'is', 'awesome']. This is a list. '''
+print(' '.join(['python', 'is', 'awesome'])) # python is awesome
+
+# NUMBERS
+a = 10
+b = 5
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+'''even if you perform a division operation between two integers, the result will always be a floating point. 
+If you want the result to be an integer, you can do so as follows:'''
+print(a//b)
+
+# Converting strings into float
+num1 = "10.1"
+num2 = "5.3"
+result = float(num1) + float(num2)
+print(result)
+print("{:.1f}".format(result)) # rounding the number specifying the decimal places
+
+
+# USER INPUT
+name = input('What is your name? ')
+print(f'Your name is {name}')
+
+# CONDITIONALS
+a = float(input('First: '))
+b = float(input('Second: '))
+op = input('Operation (sum/sub/mul/div): ')
+print('Hello, World!')
+''' print() functions as new line character by default and you can override this default behavior as follows:
+    any string passed as the value of the end parameter will be used as the terminating character of the printed line'''
+print('Hello, World!', end=' | ')
+print(100, end=' | ')
+print(5 + 5)
+# VARIABLES
+name = 'Farhan'
+age = 27
+print('My name is ' + name)
+# print('I am ' + age + 'years old') -->  this code produces an ERROR
+# strings can be concatenated with strings only
+# age is an integer, so a better way is embedding variables within string statements.
+print(f'My name is {name}')
+print(f'I am {age} years old')
+# f turns the strings into f-strings. These strings are evaluated at runtime
+# In a string, each character will have an index. And like arrays, string indexes are zero-based
+name = 'Farhan'
+print(name[0])
+print(name[1])
+# the output is F and a, in two lines
+print(name[0:3])
+# the output is Far, because is not included the character at the ending index
+print(len(name)) # output: 6
+# STRING METHODS
+print('python is awesome'.capitalize()) # Python is awesome
+print('python is awesome'.upper()) # PYTHON IS AWESOME
+print('PYTHON IS AWESOME'.lower()) # python is awesome
+print('PYTHON IS AWESOME'.islower()) # false
+print('PYTHON IS AWESOME'.isupper()) # true
+print('python is awesome'.replace('python', 'freeCodeCamp')) # freeCodeCamp is awesome
+print('python is awesome'.split(' '))
+'''The method takes a delimiter to split the string on. Here, I've used space as the delimiter. 
+Output of this code will be ['python', 'is', 'awesome']. This is a list. '''
+print(' '.join(['python', 'is', 'awesome'])) # python is awesome
+
+# NUMBERS
+a = 10
+b = 5
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+'''even if you perform a division operation between two integers, the result will always be a floating point. 
+If you want the result to be an integer, you can do so as follows:'''
+print(a//b)
+
+# Converting strings into float
+num1 = "10.1"
+num2 = "5.3"
+result = float(num1) + float(num2)
+print(result)
+print("{:.1f}".format(result)) # rounding the number specifying the decimal places
+
+
+# USER INPUT
+name = input('What is your name? ')
+print(f'Your name is {name}')
+
+# CONDITIONALS
+a = float(input('First: '))
+b = float(input('Second: '))
+op = input('Operation (sum/sub/mul/div): ')
+print('Hello, World!')
+''' print() functions as new line character by default and you can override this default behavior as follows:
+    any string passed as the value of the end parameter will be used as the terminating character of the printed line'''
+print('Hello, World!', end=' | ')
+print(100, end=' | ')
+print(5 + 5)
+# VARIABLES
+name = 'Farhan'
+age = 27
+print('My name is ' + name)
+# print('I am ' + age + 'years old') -->  this code produces an ERROR
+# strings can be concatenated with strings only
+# age is an integer, so a better way is embedding variables within string statements.
+print(f'My name is {name}')
+print(f'I am {age} years old')
+# f turns the strings into f-strings. These strings are evaluated at runtime
+# In a string, each character will have an index. And like arrays, string indexes are zero-based
+name = 'Farhan'
+print(name[0])
+print(name[1])
+# the output is F and a, in two lines
+print(name[0:3])
+# the output is Far, because is not included the character at the ending index
+print(len(name)) # output: 6
+# STRING METHODS
+print('python is awesome'.capitalize()) # Python is awesome
+print('python is awesome'.upper()) # PYTHON IS AWESOME
+print('PYTHON IS AWESOME'.lower()) # python is awesome
+print('PYTHON IS AWESOME'.islower()) # false
+print('PYTHON IS AWESOME'.isupper()) # true
+print('python is awesome'.replace('python', 'freeCodeCamp')) # freeCodeCamp is awesome
+print('python is awesome'.split(' '))
+'''The method takes a delimiter to split the string on. Here, I've used space as the delimiter. 
+Output of this code will be ['python', 'is', 'awesome']. This is a list. '''
+print(' '.join(['python', 'is', 'awesome'])) # python is awesome
+
+# NUMBERS
+a = 10
+b = 5
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+'''even if you perform a division operation between two integers, the result will always be a floating point. 
+If you want the result to be an integer, you can do so as follows:'''
+print(a//b)
+
+# Converting strings into float
+num1 = "10.1"
+num2 = "5.3"
+result = float(num1) + float(num2)
+print(result)
+print("{:.1f}".format(result)) # rounding the number specifying the decimal places
+
+
+# USER INPUT
+name = input('What is your name? ')
+print(f'Your name is {name}')
+
+# CONDITIONALS
+a = float(input('First: '))
+b = float(input('Second: '))
+op = input('Operation (sum/sub/mul/div): ')
+print('Hello, World!')
+''' print() functions as new line character by default and you can override this default behavior as follows:
+    any string passed as the value of the end parameter will be used as the terminating character of the printed line'''
+print('Hello, World!', end=' | ')
+print(100, end=' | ')
+print(5 + 5)
+# VARIABLES
+name = 'Farhan'
+age = 27
+print('My name is ' + name)
+# print('I am ' + age + 'years old') -->  this code produces an ERROR
+# strings can be concatenated with strings only
+# age is an integer, so a better way is embedding variables within string statements.
+print(f'My name is {name}')
+print(f'I am {age} years old')
+# f turns the strings into f-strings. These strings are evaluated at runtime
+# In a string, each character will have an index. And like arrays, string indexes are zero-based
+name = 'Farhan'
+print(name[0])
+print(name[1])
+# the output is F and a, in two lines
+print(name[0:3])
+# the output is Far, because is not included the character at the ending index
+print(len(name)) # output: 6
+# STRING METHODS
+print('python is awesome'.capitalize()) # Python is awesome
+print('python is awesome'.upper()) # PYTHON IS AWESOME
+print('PYTHON IS AWESOME'.lower()) # python is awesome
+print('PYTHON IS AWESOME'.islower()) # false
+print('PYTHON IS AWESOME'.isupper()) # true
+print('python is awesome'.replace('python', 'freeCodeCamp')) # freeCodeCamp is awesome
+print('python is awesome'.split(' '))
+'''The method takes a delimiter to split the string on. Here, I've used space as the delimiter. 
+Output of this code will be ['python', 'is', 'awesome']. This is a list. '''
+print(' '.join(['python', 'is', 'awesome'])) # python is awesome
+
+# NUMBERS
+a = 10
+b = 5
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+'''even if you perform a division operation between two integers, the result will always be a floating point. 
+If you want the result to be an integer, you can do so as follows:'''
+print(a//b)
+
+# Converting strings into float
+num1 = "10.1"
+num2 = "5.3"
+result = float(num1) + float(num2)
+print(result)
+print("{:.1f}".format(result)) # rounding the number specifying the decimal places
+
+
+# USER INPUT
+name = input('What is your name? ')
+print(f'Your name is {name}')
+
+# CONDITIONALS
+a = float(input('First: '))
+b = float(input('Second: '))
+op = input('Operation (sum/sub/mul/div): ')
+print('Hello, World!')
+''' print() functions as new line character by default and you can override this default behavior as follows:
+    any string passed as the value of the end parameter will be used as the terminating character of the printed line'''
+print('Hello, World!', end=' | ')
+print(100, end=' | ')
+print(5 + 5)
+# VARIABLES
+name = 'Farhan'
+age = 27
+print('My name is ' + name)
+# print('I am ' + age + 'years old') -->  this code produces an ERROR
+# strings can be concatenated with strings only
+# age is an integer, so a better way is embedding variables within string statements.
+print(f'My name is {name}')
+print(f'I am {age} years old')
+# f turns the strings into f-strings. These strings are evaluated at runtime
+# In a string, each character will have an index. And like arrays, string indexes are zero-based
+name = 'Farhan'
+print(name[0])
+print(name[1])
+# the output is F and a, in two lines
+print(name[0:3])
+# the output is Far, because is not included the character at the ending index
+print(len(name)) # output: 6
+# STRING METHODS
+print('python is awesome'.capitalize()) # Python is awesome
+print('python is awesome'.upper()) # PYTHON IS AWESOME
+print('PYTHON IS AWESOME'.lower()) # python is awesome
+print('PYTHON IS AWESOME'.islower()) # false
+print('PYTHON IS AWESOME'.isupper()) # true
+print('python is awesome'.replace('python', 'freeCodeCamp')) # freeCodeCamp is awesome
+print('python is awesome'.split(' '))
+'''The method takes a delimiter to split the string on. Here, I've used space as the delimiter. 
+Output of this code will be ['python', 'is', 'awesome']. This is a list. '''
+print(' '.join(['python', 'is', 'awesome'])) # python is awesome
+
+# NUMBERS
+a = 10
+b = 5
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+'''even if you perform a division operation between two integers, the result will always be a floating point. 
+If you want the result to be an integer, you can do so as follows:'''
+print(a//b)
+
+# Converting strings into float
+num1 = "10.1"
+num2 = "5.3"
+result = float(num1) + float(num2)
+print(result)
+print("{:.1f}".format(result)) # rounding the number specifying the decimal places
+
+
+# USER INPUT
+name = input('What is your name? ')
+print(f'Your name is {name}')
+
+# CONDITIONALS
+a = float(input('First: '))
+b = float(input('Second: '))
+op = input('Operation (sum/sub/mul/div): ')
+print('Hello, World!')
+''' print() functions as new line character by default and you can override this default behavior as follows:
+    any string passed as the value of the end parameter will be used as the terminating character of the printed line'''
+print('Hello, World!', end=' | ')
+print(100, end=' | ')
+print(5 + 5)
+# VARIABLES
+name = 'Farhan'
+age = 27
+print('My name is ' + name)
+# print('I am ' + age + 'years old') -->  this code produces an ERROR
+# strings can be concatenated with strings only
+# age is an integer, so a better way is embedding variables within string statements.
+print(f'My name is {name}')
+print(f'I am {age} years old')
+# f turns the strings into f-strings. These strings are evaluated at runtime
+# In a string, each character will have an index. And like arrays, string indexes are zero-based
+name = 'Farhan'
+print(name[0])
+print(name[1])
+# the output is F and a, in two lines
+print(name[0:3])
+# the output is Far, because is not included the character at the ending index
+print(len(name)) # output: 6
+# STRING METHODS
+print('python is awesome'.capitalize()) # Python is awesome
+print('python is awesome'.upper()) # PYTHON IS AWESOME
+print('PYTHON IS AWESOME'.lower()) # python is awesome
+print('PYTHON IS AWESOME'.islower()) # false
+print('PYTHON IS AWESOME'.isupper()) # true
+print('python is awesome'.replace('python', 'freeCodeCamp')) # freeCodeCamp is awesome
+print('python is awesome'.split(' '))
+'''The method takes a delimiter to split the string on. Here, I've used space as the delimiter. 
+Output of this code will be ['python', 'is', 'awesome']. This is a list. '''
+print(' '.join(['python', 'is', 'awesome'])) # python is awesome
+
+# NUMBERS
+a = 10
+b = 5
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+'''even if you perform a division operation between two integers, the result will always be a floating point. 
+If you want the result to be an integer, you can do so as follows:'''
+print(a//b)
+
+# Converting strings into float
+num1 = "10.1"
+num2 = "5.3"
+result = float(num1) + float(num2)
+print(result)
+print("{:.1f}".format(result)) # rounding the number specifying the decimal places
+
+
+# USER INPUT
+name = input('What is your name? ')
+print(f'Your name is {name}')
+
+# CONDITIONALS
+a = float(input('First: '))
+b = float(input('Second: '))
+op = input('Operation (sum/sub/mul/div): ')
+print('Hello, World!')
+''' print() functions as new line character by default and you can override this default behavior as follows:
+    any string passed as the value of the end parameter will be used as the terminating character of the printed line'''
+print('Hello, World!', end=' | ')
+print(100, end=' | ')
+print(5 + 5)
+# VARIABLES
+name = 'Farhan'
+age = 27
+print('My name is ' + name)
+# print('I am ' + age + 'years old') -->  this code produces an ERROR
+# strings can be concatenated with strings only
+# age is an integer, so a better way is embedding variables within string statements.
+print(f'My name is {name}')
+print(f'I am {age} years old')
+# f turns the strings into f-strings. These strings are evaluated at runtime
+# In a string, each character will have an index. And like arrays, string indexes are zero-based
+name = 'Farhan'
+print(name[0])
+print(name[1])
+# the output is F and a, in two lines
+print(name[0:3])
+# the output is Far, because is not included the character at the ending index
+print(len(name)) # output: 6
+# STRING METHODS
+print('python is awesome'.capitalize()) # Python is awesome
+print('python is awesome'.upper()) # PYTHON IS AWESOME
+print('PYTHON IS AWESOME'.lower()) # python is awesome
+print('PYTHON IS AWESOME'.islower()) # false
+print('PYTHON IS AWESOME'.isupper()) # true
+print('python is awesome'.replace('python', 'freeCodeCamp')) # freeCodeCamp is awesome
+print('python is awesome'.split(' '))
+'''The method takes a delimiter to split the string on. Here, I've used space as the delimiter. 
+Output of this code will be ['python', 'is', 'awesome']. This is a list. '''
+print(' '.join(['python', 'is', 'awesome'])) # python is awesome
+
+# NUMBERS
+a = 10
+b = 5
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+'''even if you perform a division operation between two integers, the result will always be a floating point. 
+If you want the result to be an integer, you can do so as follows:'''
+print(a//b)
+
+# Converting strings into float
+num1 = "10.1"
+num2 = "5.3"
+result = float(num1) + float(num2)
+print(result)
+print("{:.1f}".format(result)) # rounding the number specifying the decimal places
+
+
+# USER INPUT
+name = input('What is your name? ')
+print(f'Your name is {name}')
+
+# CONDITIONALS
+a = float(input('First: '))
+b = float(input('Second: '))
+op = input('Operation (sum/sub/mul/div): ')
+print('Hello, World!')
+''' print() functions as new line character by default and you can override this default behavior as follows:
+    any string passed as the value of the end parameter will be used as the terminating character of the printed line'''
+print('Hello, World!', end=' | ')
+print(100, end=' | ')
+print(5 + 5)
+# VARIABLES
+name = 'Farhan'
+age = 27
+print('My name is ' + name)
+# print('I am ' + age + 'years old') -->  this code produces an ERROR
+# strings can be concatenated with strings only
+# age is an integer, so a better way is embedding variables within string statements.
+print(f'My name is {name}')
+print(f'I am {age} years old')
+# f turns the strings into f-strings. These strings are evaluated at runtime
+# In a string, each character will have an index. And like arrays, string indexes are zero-based
+name = 'Farhan'
+print(name[0])
+print(name[1])
+# the output is F and a, in two lines
+print(name[0:3])
+# the output is Far, because is not included the character at the ending index
+print(len(name)) # output: 6
+# STRING METHODS
+print('python is awesome'.capitalize()) # Python is awesome
+print('python is awesome'.upper()) # PYTHON IS AWESOME
+print('PYTHON IS AWESOME'.lower()) # python is awesome
+print('PYTHON IS AWESOME'.islower()) # false
+print('PYTHON IS AWESOME'.isupper()) # true
+print('python is awesome'.replace('python', 'freeCodeCamp')) # freeCodeCamp is awesome
+print('python is awesome'.split(' '))
+'''The method takes a delimiter to split the string on. Here, I've used space as the delimiter. 
+Output of this code will be ['python', 'is', 'awesome']. This is a list. '''
+print(' '.join(['python', 'is', 'awesome'])) # python is awesome
+
+# NUMBERS
+a = 10
+b = 5
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+'''even if you perform a division operation between two integers, the result will always be a floating point. 
+If you want the result to be an integer, you can do so as follows:'''
+print(a//b)
+
+# Converting strings into float
+num1 = "10.1"
+num2 = "5.3"
+result = float(num1) + float(num2)
+print(result)
+print("{:.1f}".format(result)) # rounding the number specifying the decimal places
+
+
+# USER INPUT
+name = input('What is your name? ')
+print(f'Your name is {name}')
+
+# CONDITIONALS
+a = float(input('First: '))
+b = float(input('Second: '))
+op = input('Operation (sum/sub/mul/div): ')
+print('Hello, World!')
+''' print() functions as new line character by default and you can override this default behavior as follows:
+    any string passed as the value of the end parameter will be used as the terminating character of the printed line'''
+print('Hello, World!', end=' | ')
+print(100, end=' | ')
+print(5 + 5)
+# VARIABLES
+name = 'Farhan'
+age = 27
+print('My name is ' + name)
+# print('I am ' + age + 'years old') -->  this code produces an ERROR
+# strings can be concatenated with strings only
+# age is an integer, so a better way is embedding variables within string statements.
+print(f'My name is {name}')
+print(f'I am {age} years old')
+# f turns the strings into f-strings. These strings are evaluated at runtime
+# In a string, each character will have an index. And like arrays, string indexes are zero-based
+name = 'Farhan'
+print(name[0])
+print(name[1])
+# the output is F and a, in two lines
+print(name[0:3])
+# the output is Far, because is not included the character at the ending index
+print(len(name)) # output: 6
+# STRING METHODS
+print('python is awesome'.capitalize()) # Python is awesome
+print('python is awesome'.upper()) # PYTHON IS AWESOME
+print('PYTHON IS AWESOME'.lower()) # python is awesome
+print('PYTHON IS AWESOME'.islower()) # false
+print('PYTHON IS AWESOME'.isupper()) # true
+print('python is awesome'.replace('python', 'freeCodeCamp')) # freeCodeCamp is awesome
+print('python is awesome'.split(' '))
+'''The method takes a delimiter to split the string on. Here, I've used space as the delimiter. 
+Output of this code will be ['python', 'is', 'awesome']. This is a list. '''
+print(' '.join(['python', 'is', 'awesome'])) # python is awesome
+
+# NUMBERS
+a = 10
+b = 5
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+'''even if you perform a division operation between two integers, the result will always be a floating point. 
+If you want the result to be an integer, you can do so as follows:'''
+print(a//b)
+
+# Converting strings into float
+num1 = "10.1"
+num2 = "5.3"
+result = float(num1) + float(num2)
+print(result)
+print("{:.1f}".format(result)) # rounding the number specifying the decimal places
+
+
+# USER INPUT
+name = input('What is your name? ')
+print(f'Your name is {name}')
+
+# CONDITIONALS
+a = float(input('First: '))
+b = float(input('Second: '))
+op = input('Operation (sum/sub/mul/div): ')
+print('Hello, World!')
+''' print() functions as new line character by default and you can override this default behavior as follows:
+    any string passed as the value of the end parameter will be used as the terminating character of the printed line'''
+print('Hello, World!', end=' | ')
+print(100, end=' | ')
+print(5 + 5)
+# VARIABLES
+name = 'Farhan'
+age = 27
+print('My name is ' + name)
+# print('I am ' + age + 'years old') -->  this code produces an ERROR
+# strings can be concatenated with strings only
+# age is an integer, so a better way is embedding variables within string statements.
+print(f'My name is {name}')
+print(f'I am {age} years old')
+# f turns the strings into f-strings. These strings are evaluated at runtime
+# In a string, each character will have an index. And like arrays, string indexes are zero-based
+name = 'Farhan'
+print(name[0])
+print(name[1])
+# the output is F and a, in two lines
+print(name[0:3])
+# the output is Far, because is not included the character at the ending index
+print(len(name)) # output: 6
+# STRING METHODS
+print('python is awesome'.capitalize()) # Python is awesome
+print('python is awesome'.upper()) # PYTHON IS AWESOME
+print('PYTHON IS AWESOME'.lower()) # python is awesome
+print('PYTHON IS AWESOME'.islower()) # false
+print('PYTHON IS AWESOME'.isupper()) # true
+print('python is awesome'.replace('python', 'freeCodeCamp')) # freeCodeCamp is awesome
+print('python is awesome'.split(' '))
+'''The method takes a delimiter to split the string on. Here, I've used space as the delimiter. 
+Output of this code will be ['python', 'is', 'awesome']. This is a list. '''
+print(' '.join(['python', 'is', 'awesome'])) # python is awesome
+
+# NUMBERS
+a = 10
+b = 5
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+'''even if you perform a division operation between two integers, the result will always be a floating point. 
+If you want the result to be an integer, you can do so as follows:'''
+print(a//b)
+
+# Converting strings into float
+num1 = "10.1"
+num2 = "5.3"
+result = float(num1) + float(num2)
+print(result)
+print("{:.1f}".format(result)) # rounding the number specifying the decimal places
+
+
+# USER INPUT
+name = input('What is your name? ')
+print(f'Your name is {name}')
+
+# CONDITIONALS
+a = float(input('First: '))
+b = float(input('Second: '))
+op = input('Operation (sum/sub/mul/div): ')
+print('Hello, World!')
+''' print() functions as new line character by default and you can override this default behavior as follows:
+    any string passed as the value of the end parameter will be used as the terminating character of the printed line'''
+print('Hello, World!', end=' | ')
+print(100, end=' | ')
+print(5 + 5)
+# VARIABLES
+name = 'Farhan'
+age = 27
+print('My name is ' + name)
+# print('I am ' + age + 'years old') -->  this code produces an ERROR
+# strings can be concatenated with strings only
+# age is an integer, so a better way is embedding variables within string statements.
+print(f'My name is {name}')
+print(f'I am {age} years old')
+# f turns the strings into f-strings. These strings are evaluated at runtime
+# In a string, each character will have an index. And like arrays, string indexes are zero-based
+name = 'Farhan'
+print(name[0])
+print(name[1])
+# the output is F and a, in two lines
+print(name[0:3])
+# the output is Far, because is not included the character at the ending index
+print(len(name)) # output: 6
+# STRING METHODS
+print('python is awesome'.capitalize()) # Python is awesome
+print('python is awesome'.upper()) # PYTHON IS AWESOME
+print('PYTHON IS AWESOME'.lower()) # python is awesome
+print('PYTHON IS AWESOME'.islower()) # false
+print('PYTHON IS AWESOME'.isupper()) # true
+print('python is awesome'.replace('python', 'freeCodeCamp')) # freeCodeCamp is awesome
+print('python is awesome'.split(' '))
+'''The method takes a delimiter to split the string on. Here, I've used space as the delimiter. 
+Output of this code will be ['python', 'is', 'awesome']. This is a list. '''
+print(' '.join(['python', 'is', 'awesome'])) # python is awesome
+
+# NUMBERS
+a = 10
+b = 5
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+'''even if you perform a division operation between two integers, the result will always be a floating point. 
+If you want the result to be an integer, you can do so as follows:'''
+print(a//b)
+
+# Converting strings into float
+num1 = "10.1"
+num2 = "5.3"
+result = float(num1) + float(num2)
+print(result)
+print("{:.1f}".format(result)) # rounding the number specifying the decimal places
+
+
+# USER INPUT
+name = input('What is your name? ')
+print(f'Your name is {name}')
+
+# CONDITIONALS
+a = float(input('First: '))
+b = float(input('Second: '))
+op = input('Operation (sum/sub/mul/div): ')
+print('Hello, World!')
+''' print() functions as new line character by default and you can override this default behavior as follows:
+    any string passed as the value of the end parameter will be used as the terminating character of the printed line'''
+print('Hello, World!', end=' | ')
+print(100, end=' | ')
+print(5 + 5)
+# VARIABLES
+name = 'Farhan'
+age = 27
+print('My name is ' + name)
+# print('I am ' + age + 'years old') -->  this code produces an ERROR
+# strings can be concatenated with strings only
+# age is an integer, so a better way is embedding variables within string statements.
+print(f'My name is {name}')
+print(f'I am {age} years old')
+# f turns the strings into f-strings. These strings are evaluated at runtime
+# In a string, each character will have an index. And like arrays, string indexes are zero-based
+name = 'Farhan'
+print(name[0])
+print(name[1])
+# the output is F and a, in two lines
+print(name[0:3])
+# the output is Far, because is not included the character at the ending index
+print(len(name)) # output: 6
+# STRING METHODS
+print('python is awesome'.capitalize()) # Python is awesome
+print('python is awesome'.upper()) # PYTHON IS AWESOME
+print('PYTHON IS AWESOME'.lower()) # python is awesome
+print('PYTHON IS AWESOME'.islower()) # false
+print('PYTHON IS AWESOME'.isupper()) # true
+print('python is awesome'.replace('python', 'freeCodeCamp')) # freeCodeCamp is awesome
+print('python is awesome'.split(' '))
+'''The method takes a delimiter to split the string on. Here, I've used space as the delimiter. 
+Output of this code will be ['python', 'is', 'awesome']. This is a list. '''
+print(' '.join(['python', 'is', 'awesome'])) # python is awesome
+
+# NUMBERS
+a = 10
+b = 5
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+'''even if you perform a division operation between two integers, the result will always be a floating point. 
+If you want the result to be an integer, you can do so as follows:'''
+print(a//b)
+
+# Converting strings into float
+num1 = "10.1"
+num2 = "5.3"
+result = float(num1) + float(num2)
+print(result)
+print("{:.1f}".format(result)) # rounding the number specifying the decimal places
+
+
+# USER INPUT
+name = input('What is your name? ')
+print(f'Your name is {name}')
+
+# CONDITIONALS
+a = float(input('First: '))
+b = float(input('Second: '))
+op = input('Operation (sum/sub/mul/div): ')
+print('Hello, World!')
+''' print() functions as new line character by default and you can override this default behavior as follows:
+    any string passed as the value of the end parameter will be used as the terminating character of the printed line'''
+print('Hello, World!', end=' | ')
+print(100, end=' | ')
+print(5 + 5)
+# VARIABLES
+name = 'Farhan'
+age = 27
+print('My name is ' + name)
+# print('I am ' + age + 'years old') -->  this code produces an ERROR
+# strings can be concatenated with strings only
+# age is an integer, so a better way is embedding variables within string statements.
+print(f'My name is {name}')
+print(f'I am {age} years old')
+# f turns the strings into f-strings. These strings are evaluated at runtime
+# In a string, each character will have an index. And like arrays, string indexes are zero-based
+name = 'Farhan'
+print(name[0])
+print(name[1])
+# the output is F and a, in two lines
+print(name[0:3])
+# the output is Far, because is not included the character at the ending index
+print(len(name)) # output: 6
+# STRING METHODS
+print('python is awesome'.capitalize()) # Python is awesome
+print('python is awesome'.upper()) # PYTHON IS AWESOME
+print('PYTHON IS AWESOME'.lower()) # python is awesome
+print('PYTHON IS AWESOME'.islower()) # false
+print('PYTHON IS AWESOME'.isupper()) # true
+print('python is awesome'.replace('python', 'freeCodeCamp')) # freeCodeCamp is awesome
+print('python is awesome'.split(' '))
+'''The method takes a delimiter to split the string on. Here, I've used space as the delimiter. 
+Output of this code will be ['python', 'is', 'awesome']. This is a list. '''
+print(' '.join(['python', 'is', 'awesome'])) # python is awesome
+
+# NUMBERS
+a = 10
+b = 5
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+'''even if you perform a division operation between two integers, the result will always be a floating point. 
+If you want the result to be an integer, you can do so as follows:'''
+print(a//b)
+
+# Converting strings into float
+num1 = "10.1"
+num2 = "5.3"
+result = float(num1) + float(num2)
+print(result)
+print("{:.1f}".format(result)) # rounding the number specifying the decimal places
+
+
+# USER INPUT
+name = input('What is your name? ')
+print(f'Your name is {name}')
+
+# CONDITIONALS
+a = float(input('First: '))
+b = float(input('Second: '))
+op = input('Operation (sum/sub/mul/div): ')
+print('Hello, World!')
+''' print() functions as new line character by default and you can override this default behavior as follows:
+    any string passed as the value of the end parameter will be used as the terminating character of the printed line'''
+print('Hello, World!', end=' | ')
+print(100, end=' | ')
+print(5 + 5)
+# VARIABLES
+name = 'Farhan'
+age = 27
+print('My name is ' + name)
+# print('I am ' + age + 'years old') -->  this code produces an ERROR
+# strings can be concatenated with strings only
+# age is an integer, so a better way is embedding variables within string statements.
+print(f'My name is {name}')
+print(f'I am {age} years old')
+# f turns the strings into f-strings. These strings are evaluated at runtime
+# In a string, each character will have an index. And like arrays, string indexes are zero-based
+name = 'Farhan'
+print(name[0])
+print(name[1])
+# the output is F and a, in two lines
+print(name[0:3])
+# the output is Far, because is not included the character at the ending index
+print(len(name)) # output: 6
+# STRING METHODS
+print('python is awesome'.capitalize()) # Python is awesome
+print('python is awesome'.upper()) # PYTHON IS AWESOME
+print('PYTHON IS AWESOME'.lower()) # python is awesome
+print('PYTHON IS AWESOME'.islower()) # false
+print('PYTHON IS AWESOME'.isupper()) # true
+print('python is awesome'.replace('python', 'freeCodeCamp')) # freeCodeCamp is awesome
+print('python is awesome'.split(' '))
+'''The method takes a delimiter to split the string on. Here, I've used space as the delimiter. 
+Output of this code will be ['python', 'is', 'awesome']. This is a list. '''
+print(' '.join(['python', 'is', 'awesome'])) # python is awesome
+
+# NUMBERS
+a = 10
+b = 5
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+'''even if you perform a division operation between two integers, the result will always be a floating point. 
+If you want the result to be an integer, you can do so as follows:'''
+print(a//b)
+
+# Converting strings into float
+num1 = "10.1"
+num2 = "5.3"
+result = float(num1) + float(num2)
+print(result)
+print("{:.1f}".format(result)) # rounding the number specifying the decimal places
+
+
+# USER INPUT
+name = input('What is your name? ')
+print(f'Your name is {name}')
+
+# CONDITIONALS
+a = float(input('First: '))
+b = float(input('Second: '))
+op = input('Operation (sum/sub/mul/div): ')
+print('Hello, World!')
+''' print() functions as new line character by default and you can override this default behavior as follows:
     any string passed as the value of the end parameter will be used as the terminating character of the printed line'''
 print('Hello, World!', end=' | ')
 print(100, end=' | ')
