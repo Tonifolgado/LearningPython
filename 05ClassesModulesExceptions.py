@@ -98,8 +98,22 @@ except ValueError as error:
 except Exception as my_random_error_name:
     print(my_random_error_name)
 
+# init() function for constructors
+# Cuando no se proporciona ningún constructor, automáticamente el constructor por defecto es creado
+class MyClass:
+    def __init__(self, param1, param2):
+        self.param1 = param1
+        self.param2 = param2
+
+obj = MyClass("value1", "value2")
+print(obj.param1) # output: value1
+print(obj.param2) # output: value2  
+
+
+
 # ---------------
 ### Error Types ###
+# --------------
 
 # SyntaxError
 # print "¡Hola comunidad!" # Descomentar para Error
