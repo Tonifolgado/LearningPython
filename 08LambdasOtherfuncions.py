@@ -72,3 +72,20 @@ def sum_two_values(first_value, second_value):
     return first_value + second_value
 
 print(reduce(sum_two_values, numbers)) # 71
+
+# The self parameter
+# The first parameter of any method of a class is always self
+# It is a reference to the current instance of the class and is used to access variables and methods
+# self keyword to access the data members and call member functions of the object
+# ejemplo con self
+class Persona:
+    def __init__(self, nombre, edad):
+        self.nombre = nombre
+        self.edad = edad
+
+    def saludar(self):
+        print(f"Hola, soy {self.nombre} y tengo {self.edad} años.")
+        print(f"Mi nombre es {self.nombre} y mi edad es {self.edad}")
+
+
+              
