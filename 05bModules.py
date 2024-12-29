@@ -50,7 +50,10 @@ def calculate_square_root(x):
 print(calculate_square_root(100))
 
 # Importing a module from a subpackage
-from calculator import functions
+# Ensure the calculator module is in the Python path or provide the correct path
+import sys
+sys.path.append('/Users/antonioalvarezfolgado/Folgado/eLearning/LearningPython')
+from calculator import functions # type: ignore
 functions.calculate_square_root()
 # functions is a subdirectory of calculator
 
