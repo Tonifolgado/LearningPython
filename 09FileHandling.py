@@ -69,3 +69,11 @@ with open("my_file.csv") as my_other_file:
 # .xml file
 # ¿Te atreves a practicar cómo trabajar con este tipo de ficheros?
 
+#Iterate through file if EOF error finds end of file break out of loop
+#skip over blank lines
+with open("my_file.csv") as my_other_file:
+    for line in my_other_file.readlines():
+        if line.strip():
+            print(line)
+        else:
+            break
